@@ -8,7 +8,7 @@ export default function SearchBox({updateInfo}){
 
  let API_URL = "http://api.openweathermap.org/geo/1.0/direct";
  let API_KEY = "1ed14cbf6d7e79aa6422cc24300ba034";
-  let MAIN_URL = "https://api.openweathermap.org/data/2.5/weather";
+  let MAIN_URL = "http://api.openweathermap.org/data/2.5/weather";
 
  let getWeatherInfo = async () => {
       let responce = await fetch(`${API_URL}?q=${city}&appid=${API_KEY}`);
